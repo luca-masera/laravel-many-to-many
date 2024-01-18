@@ -12,6 +12,6 @@
 
         </ul>
 
-        <a href="{{ route('admin.technologys.edit', $technology->slug) }}" class="btn btn-success ">Modifica</a>
+        <a href="{{ route('admin.technologies.edit', $technology->slug) }}" class="btn btn-success ">Modifica</a>
     </section>
 @endsection
