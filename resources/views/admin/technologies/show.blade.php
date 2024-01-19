@@ -3,6 +3,8 @@
     <section class="container">
 
         <h1>{{ $technology->name }}</h1>
+        @if ($technology->projects)
+        @endif
         <ul>
             @forelse ($technology->projects as $project)
                 <li>{{ $project->title }}</li>
