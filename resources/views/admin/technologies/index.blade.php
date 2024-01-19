@@ -4,11 +4,11 @@
         <h1>Lista technology</h1>
         <table class="table">
             <tbody>
-                @foreach ($technologys as $technology)
+                @foreach ($technologies as $technology)
                     <tr>
                         <td>{{ $technology->name }}</td>
                         <td class="d-flex justify-content-end align-items-center">
-                            <a href="{{ route('admin.technologiss.show', $technology->slug) }}"
+                            <a href="{{ route('admin.technologies.show', $technology->slug) }}"
                                 class="btn btn-success ">Mostra</a>
 
                             <form action="{{ route('admin.technologies.destroy', $technology->slug) }}" method="POST">
